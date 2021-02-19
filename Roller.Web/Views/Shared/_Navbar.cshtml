@@ -1,0 +1,52 @@
+﻿@using Roller.DataContext.Entity
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+
+<nav class="navbar navbar-expand-sm navbar-toggleable-lg navbar-dark border-bottom box-shadow mb-3 navbar-custom">
+    <div class="container">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">@Configuration["CompanyName"]</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                <li class="site-logo">
+                    <a href="#" class="d-block text-sm-left">
+                        <img src="~/images/logo0.png" alt="Image" class="img-fluid">
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="about"> <small>About Us</small></a>
+
+                </li>
+
+            </ul>
+            @if (SignInManager.IsSignedIn(User))
+            {
+
+                <partial name="_SignedInLinks" />
+            }
+            else
+            {
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Login"><i class="fas fa-sign-in-alt"></i>Sign in</a>
+                    </li>
+                </ul>
+            }
+
+        </div>
+    </div>
+</nav>

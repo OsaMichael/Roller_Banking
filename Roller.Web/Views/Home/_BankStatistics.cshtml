@@ -1,0 +1,34 @@
+﻿@*@using Bank.Common.Extensions*@
+@model BankStatisticsViewModel
+
+<div class="card w-75">
+    <div class="card-header text-center list-group-item-primary">Bank statistics</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-8 text-right " style="color:black">
+                Total customers:
+            </div>
+            <div class="col-4 text-left" style="color:black">
+                @Model.TotalCustomers
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 text-right" style="color:black">
+                Total accounts:
+            </div>
+            <div class="col-4 text-left" style="color:black">
+                @Model.TotalAccounts
+            </div>
+        </div>
+    </div>
+    <div class="card-footer list-group-item-primary">
+        <div class="row">
+            <div class="col-6 text-left">
+                Total balance:
+            </div>
+            <div class="col-6 text-right font-weight-bold">
+                @Model.TotalBalance
+            </div>
+        </div>
+    </div>
+</div>

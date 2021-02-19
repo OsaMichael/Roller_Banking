@@ -1,0 +1,74 @@
+﻿@using Roller.Repository
+
+@{
+
+    ViewBag.Title = "Deposit";
+    Layout = "_Layout";
+
+    var acct = ViewBag.account;
+
+    var bal = ViewBag.balance;
+    var transdate = ViewBag.transId;
+
+
+}
+<br />
+<br />
+<br />
+<br />
+<div class="card w-75">
+    <div class="card-header text-center list-group-item-primary">Account Details</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-6 text-right">
+                Account Number:
+            </div>
+            <div class="col-6 text-left">
+                @acct
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-right">
+                Account Balance:
+            </div>
+            <div class="col-6 text-left">
+                @bal
+            </div>
+        </div>
+        <a asp-controller="Customer" asp-action="Index" class="btn btn-outline-primary text-secondary"><i class="fas fa-backward"></i> Back</a>
+    </div>
+</div>
+@*<div class="row">
+            <div class="col-6 text-right">
+                Transaction date:
+            </div>
+            <div class="col-6 text-left">
+                <b style="width:100px; height:100px"> @transdate</b>
+            </div>
+        </div>
+    </div>*@
+
+
+
+@*<td>@String.Format("{0:d}", cust.Birthdate)</td>*@
+
+
+@*<link href="~/sweetAlert/sweetalert/ rel="stylesheet" />*@
+
+@*<script type="text/javascript">
+
+        @if(TempData["Message"] != null) { < text >
+                $(window).load(function()
+                    {
+                    $(document).ready(function()
+                        {
+                        swal({
+                            title: "Message",
+                            text: "@TempData["
+                            Message "]",
+                            type: "success"
+                        });
+                    });
+                }); < /text>
+        }
+    </script>*@  

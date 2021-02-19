@@ -1,0 +1,134 @@
+﻿@using Roller.Repository.Extensions
+@model Roller.Repository.Customers.CustomerDto
+@using Roller.Repository
+@{
+    ViewData["Title"] = "Customer details";
+
+    //var CustImageThumbnailUrl = ViewBag.imageThumb;
+    var accountNumb = ViewBag.accountNumber;
+    var accountBal = ViewBag.balance;
+}
+<br />
+<br />
+<br />
+<br />
+<div class="container pb-3 pt-3">
+
+    @*@if (TempData["Message"] != null)
+        {
+            <partial name="_AlertSuccess" />
+        }*@
+
+    <div class="row">
+        <div class="col-4">
+            <h5 class="pb-1">
+                @*<i class="far fa-user"></i>*@
+                @*<td>*@
+                <img src="@Url.Content("~/uploads/img/")@Model.CustImageThumbnailUrl" class="img-thumbnail-small img-circle" style="width:120px; height:120px;" @*alt="brandname/@item.BrandName" *@ />
+                @*</td>*@
+                @*Profile*@
+            </h5>
+            <address>
+                <strong><i class="fas fa-id-card-alt"></i> #@Model.AccountNumber @Model.FullName</strong><br>
+
+                @Model.Address.StreetAdress<br>
+                @*@Model.Address.ZipCode*@ @Model.Address.City, @Model.Address.Country<br>
+                <abbr title="Phone">Phone:</abbr> @Model.TelephoneNumber
+            </address>
+            <p>
+                <i class="fas fa-birthday-cake"></i> Birthday: @Model.PrintBirthday()<br />
+                @*<i class="fas fa-flag"></i> National ID: @Model.NationalId<br />*@
+                @switch (Model.Gender)
+                {
+                    case "Male":
+                        <i class="fas fa-mars"></i> @Model.Gender
+                        break;
+                    case "Female":
+                        <i class="fas fa-venus"></i> @Model.Gender
+                        break;
+                    default:
+                        <span>Gender: @Model.Gender</span>
+                        break;
+                }
+            </p>
+            <address>
+                <i class="fas fa-envelope"></i> <a href="mailto:@Model.EmailAdress">@Model.EmailAdress</a>
+            </address>
+            <div>
+                <img src="@Url.Content("~/upload/img/")@Model.ScannThumbnailUrl" class="img-thumbnail-small img-circle" style="width:180px; height:100px;" @*alt="brandname/@item.BrandName" *@ />
+
+            </div>
+            <br />
+
+            @*@if (Model.Cards.Any())
+                {
+                    <div class="col-6">
+                        <h5 class="pb-1"><i class="far fa-credit-card"></i> Credit Cards</h5>
+                        @foreach (var card in Model.Cards)
+                        {
+                            <p>
+                                @card.CcType @card.Type <br />
+                                @card.CcNumber <br />
+                                Issued: @card.Issued.Date.ToString("yyy-MM-dd") <br />
+                                Expiration: @card.ExpM/@card.ExpY<br />
+                            </p>
+                        }
+                    </div>
+                }*@
+            @*<div class="col-2">
+                    <a class="btn btn-outline-primary" asp-controller="Customer" asp-action="Edit" asp-route-id="@Model.AccountNumber">Edit Customer</a>
+                </div>*@
+        </div>
+
+
+        @*/////////////////////////////////*@
+
+        @*put a form to deposit amount*@
+        @*<hr />*@
+        <ol class="breadcrumb page-breadcrumb pull-right"></ol>
+
+        <form asp-controller="Cashier" asp-action="CashWithdraw" method="POST" class="pt-2">
+            <input type="hidden" name="AccountNumber" value="@Model.AccountNumber" />
+            <input type="hidden" name="CustomerId" value="@Model.CustomerId" />
+            <div class="form-row">
+                <div>
+                    <div class="form-group col-lg-12">
+                        <label asp-for="Amount"></label> *
+                        <input asp-for="Amount" class="form-control">
+                        <small><span asp-validation-for="Amount"></span></small>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label asp-for="ReferenceNo"></label> *
+                        <input asp-for="ReferenceNo" class="form-control">
+                        <small><span asp-validation-for="ReferenceNo"></span></small>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group col-lg-12">
+                        <label asp-for="Depositor"></label> *
+                        <input asp-for="Depositor" class="form-control">
+                        <small><span asp-validation-for="Depositor"></span></small>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label asp-for="Attendant"></label> *
+                        <input asp-for="Attendant" class="form-control">
+                        <small><span asp-validation-for="Attendant"></span></small>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group pt-2" style="text-align:center">
+                <button type="submit" class="btn btn-outline-primary">Post</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<foot @*class="breadcrumb"*@ >
+    <div style="text-align:center">
+        <h4 style="color:cadetblue" >AccountNumber:    @accountNumb</h4>
+        <h4 style="color:cadetblue">Total Balance:  # @accountBal</h4>
+    </div>
+</foot>
+

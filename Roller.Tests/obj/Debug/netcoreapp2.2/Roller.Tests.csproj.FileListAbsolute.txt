@@ -1,0 +1,46 @@
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.AssemblyInfoInputs.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.AssemblyInfo.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Web.Views.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Web.Views.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Tests.deps.json
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Tests.runtimeconfig.json
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Tests.runtimeconfig.dev.json
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Tests.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Tests.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.DataContext.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Repository.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Web.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Repository.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Web.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.DataContext.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.csprojAssemblyReference.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.csproj.CopyComplete
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Web.Views.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Web.Views.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Tests.deps.json
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Tests.runtimeconfig.json
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Tests.runtimeconfig.dev.json
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Tests.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Tests.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.DataContext.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Repository.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Web.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Repository.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.Web.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\bin\Debug\netcoreapp2.2\Roller.DataContext.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.csprojAssemblyReference.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.csproj.CoreCompileInputs.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.AssemblyInfoInputs.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.AssemblyInfo.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.csproj.CopyComplete
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Tests\obj\Debug\netcoreapp2.2\Roller.Tests.pdb

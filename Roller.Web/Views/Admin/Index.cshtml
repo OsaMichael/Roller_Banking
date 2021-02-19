@@ -1,0 +1,65 @@
+﻿
+
+@using Roller.Web.Models.UserViewModels
+@using Roller.Web.Models
+@model Roller.Repository.AccountRepo.UserModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container pt-3 pb-3">
+    @*@if (TempData["Message"] != null)
+        {
+            <partial name="_AlertSuccess" />
+        }*@
+    @*@if (TempData["Error"] != null)
+        {
+            <partial name="_AlertError" />
+        }*@
+    <h1 class="text-center pb-5">Manage bank users</h1>
+    <table class="table table-sm w-75 offset-2 text-center">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Manage</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Users)
+            {
+                <tr class="text-left">
+                    <td>@user.Email</td>
+                    @*<td>@user.Claims</td>*@
+                    @foreach (var claim in user.Claims)
+                    {
+                        <td>@claim.Type</td>
+                    }
+                    <td>
+                        @if (User.Identity.Name != user.Email && User.HasClaim(Claims.Admin, "true"))
+                        {
+                            <button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#claim-@user.Id">
+                                <i class="fas fa-user-tag"></i> Change Role
+                            </button>
+                            <button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#edit-@user.Id">
+                                <i class="fas fa-user-edit"></i> Edit
+                            </button>
+                            <button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#delete-@user.Id">
+                                <i class="fas fa-user-minus"></i> Delete
+                            </button>
+                        }
+                        else
+                        {
+                            <button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#edit-@user.Id">
+                                <i class="fas fa-user-edit"></i> Edit
+                            </button>
+                        }
+                    </td>
+                    <partial name="_ClaimForm" model="@user" />
+                    <partial name="_DeleteForm" model="@user" />
+                    <partial name="_UserEditForm" model="@(new EditUserModel{Email = user.Email, UserId = user.Id})" />
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

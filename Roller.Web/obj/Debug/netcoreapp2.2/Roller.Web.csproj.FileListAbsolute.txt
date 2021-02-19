@@ -1,0 +1,217 @@
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.csprojAssemblyReference.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.RazorAssemblyInfo.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.RazorAssemblyInfo.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.AssemblyInfoInputs.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.AssemblyInfo.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.TagHelpers.input.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.TagHelpers.output.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.RazorCoreGenerate.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\AccessDenied.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Denied.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\EMAIL_OTP.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\OTPNumbers.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\RegisterClient.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\_OPT.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\CreateRole.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\CreateUser.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\DeleteUser.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\EditClaims.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Index.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\RoleList.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Roles.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Update.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\UpdateUser.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\UserList.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\_ClaimForm.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\_DeleteForm.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\_UserEditForm.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\CashDeposit.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\CashierTransfer.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\ConfirmCashDeposit.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\ConfirmCashWithdraw.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\MakePayment.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\ShowBalance.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\ShowWithdrawBalance.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\TransferBalance.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\_SearchToTransfer.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\ActivatLoan.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerDetails.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerToWithDral.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index2.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index3.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Register.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Search.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\SearchCustToActivate.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\SearchCustToTransferFrom.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\SearchFullCustDetails.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\SearchWithdraw.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\ShowBalace.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Transactions.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\_SearchAllDetails.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\_SearchBalance.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\_SearchForm.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\_SearchFormWithdraw.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\_SearchToActivate.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\_BankStatistics.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\_SearchByCustomerId.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ActivateLoan.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Loan\AllacTiveLoans.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Loan\RegisterLoan.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ReNewLoan.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Loan\_SearchToActivate.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\AccountLayout.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Footer.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Navbar.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_NotificationPanel.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_SignedInLinks.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.RazorTargetAssemblyInfo.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.RazorTargetAssemblyInfo.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.deps.json
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.runtimeconfig.json
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.runtimeconfig.dev.json
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.Views.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.Views.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.DataContext.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Repository.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.DataContext.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Repository.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.Views.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.csproj.CopyComplete
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\IndexUsers.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\IndexCashier.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\GetSignView.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\IndexCashier.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\_SearchByCustomerId.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\GetSignView.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\SignOut.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Home.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Profile\Update.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Wallet\Index.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Wallet\AddWallet.g.cshtml.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Wallet\MakePayment.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.deps.json
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.runtimeconfig.json
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.runtimeconfig.dev.json
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.Views.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Web.Views.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.DataContext.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Repository.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.DataContext.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\bin\Debug\netcoreapp2.2\Roller.Repository.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.csprojAssemblyReference.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.csproj.CoreCompileInputs.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.RazorAssemblyInfo.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.RazorAssemblyInfo.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.AssemblyInfoInputs.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.AssemblyInfo.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.TagHelpers.input.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.TagHelpers.output.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.RazorCoreGenerate.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\AccessDenied.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Denied.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\EMAIL_OTP.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\GetSignView.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\IndexCashier.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\OTPNumbers.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\RegisterClient.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\_OPT.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\_SearchByCustomerId.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\CreateRole.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\CreateUser.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\DeleteUser.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\EditClaims.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Index.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\RoleList.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Roles.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Update.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\UpdateUser.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\UserList.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\_ClaimForm.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\_DeleteForm.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\_UserEditForm.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\CashDeposit.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\CashierTransfer.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\ConfirmCashDeposit.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\ConfirmCashWithdraw.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\MakePayment.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\ShowBalance.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\ShowWithdrawBalance.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\TransferBalance.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Cashier\_SearchToTransfer.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\ActivatLoan.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerDetails.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerToWithDral.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index2.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index3.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Register.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Search.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\SearchCustToActivate.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\SearchCustToTransferFrom.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\SearchFullCustDetails.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\SearchWithdraw.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\ShowBalace.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Transactions.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\_SearchAllDetails.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\_SearchBalance.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\_SearchForm.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\_SearchFormWithdraw.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Customer\_SearchToActivate.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\GetSignView.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Home.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\IndexCashier.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\IndexUsers.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\SignOut.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\_BankStatistics.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\_SearchByCustomerId.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ActivateLoan.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Loan\AllacTiveLoans.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Loan\RegisterLoan.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ReNewLoan.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Loan\_SearchToActivate.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Profile\Update.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\AccountLayout.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Footer.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Navbar.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_NotificationPanel.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_SignedInLinks.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Wallet\AddWallet.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Wallet\Index.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Wallet\MakePayment.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.RazorTargetAssemblyInfo.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.RazorTargetAssemblyInfo.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.Views.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.csproj.CopyComplete
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Roller.Web.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\About.g.cshtml.cs

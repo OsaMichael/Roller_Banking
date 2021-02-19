@@ -1,0 +1,28 @@
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.Repository.deps.json
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.Repository.runtimeconfig.json
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.Repository.runtimeconfig.dev.json
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.Repository.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.Repository.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.DataContext.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.DataContext.pdb
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.csprojAssemblyReference.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.AssemblyInfoInputs.cache
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.AssemblyInfo.cs
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.csproj.CopyComplete
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.dll
+C:\Users\Michael\Documents\Visual Studio 2017\Projects\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.Repository.deps.json
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.Repository.runtimeconfig.json
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.Repository.runtimeconfig.dev.json
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.Repository.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.Repository.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.DataContext.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\bin\Debug\netcoreapp2.2\Roller.DataContext.pdb
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.csprojAssemblyReference.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.csproj.CoreCompileInputs.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.AssemblyInfoInputs.cache
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.AssemblyInfo.cs
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.csproj.CopyComplete
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.dll
+C:\Users\CI\Music\Roller (2)\Roller\Roller.Repository\obj\Debug\netcoreapp2.2\Roller.Repository.pdb

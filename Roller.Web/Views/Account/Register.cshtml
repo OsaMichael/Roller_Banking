@@ -1,0 +1,92 @@
+﻿@model Roller.Web.Models.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container pt-3">
+    <h1 class="bg-info text-white">Register User</h1>
+    <h1></h1>
+    <div class="row pt-3">
+        <div class="col-6">
+            <form asp-action="Register" asp-controller="Account" method="POST" autocomplete="off">
+                <div class="form-group">
+                    <label asp-for="Username"></label>
+                    <input asp-for="Username" class="form-control" autocomplete="nope" placeholder="Username..." />
+                    <span asp-validation-for="Username"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" class="form-control" autocomplete="nope" placeholder="Email..." />
+                    <span asp-validation-for="Email"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" autocomplete="nope" placeholder="Password..." />
+                    <span asp-validation-for="Password"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="FirstName"></label>
+                    <input asp-for="FirstName" class="form-control" autocomplete="nope" placeholder="FirstName..." />
+                    <span asp-validation-for="FirstName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="LastName"></label>
+                    <input asp-for="LastName" class="form-control" autocomplete="nope" placeholder="LastName..." />
+                    <span asp-validation-for="LastName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MiddleName"></label>
+                    <input asp-for="MiddleName" class="form-control" autocomplete="nope" placeholder="MiddleName..." />
+                    <span asp-validation-for="MiddleName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PhoneNumber"></label>
+                    <input asp-for="PhoneNumber" class="form-control" autocomplete="nope" placeholder="PhoneNumber..." />
+                    <span asp-validation-for="PhoneNumber"></span>
+                </div>
+                @*<div class="form-group">
+                    <label asp-for="Address"></label>
+                    <input asp-for="Address" class="form-control" autocomplete="nope" placeholder="Address..." />
+                    <span asp-validation-for="Address"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DateOfBirth"></label>
+                    @*<input type="date" name="DateOfBirth" class="form-control" value="dd/MM/yyyy" />
+            @Html.ValidationMessageFor(m => m.DateOfBirth, "", new { @class = "text-danger" })*@
+                    @*<input asp-for="DateOfBirth" type="date" name="DateOfBirth" class="form-control" value="dd/MM/yyyy" autocomplete="nope" placeholder="DateOfBirth..." />
+                    <span asp-validation-for="DateOfBirth"></span>
+                </div>*@
+
+                @*<div class="form-group">
+                    <label asp-for="State"></label>
+                    <input asp-for="State" class="form-control" autocomplete="nope" placeholder="State..." />
+                    <span asp-validation-for="State"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="branch"></label>
+                    <input asp-for="branch" class="form-control" autocomplete="nope" placeholder="branch..." />
+                    <span asp-validation-for="branch"></span>
+                </div>*@
+                <div class="form-group w-50">
+                    <label asp-for="SelectedRole"></label>
+                    <select asp-for="SelectedRole" asp-items="Model.RoleSelect" class="form-control"></select>
+                    <span asp-validation-for="SelectedRole"></span>
+                </div>
+                <div class="form-group text-right">
+                    <button class="btn btn-outline-primary">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @*@if (TempData["Message"] != null)
+        {
+            <partial name="_AlertSuccess" />
+        }
+        @if (TempData["Error"] != null)
+        {
+            <partial name="_AlertError" />
+        }*@
+</div>

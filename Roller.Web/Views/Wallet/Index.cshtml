@@ -1,0 +1,44 @@
+﻿@model Roller.Repository.Customers.WalletDto
+@{
+    ViewData["Title"] = "Index";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<div style="text-align:center">
+    <small style="text-align:center; color:cadetblue">Wallet Balance</small>
+    <h4 style="color:darkcyan"># @Model.AccountBalance</h4>
+</div>
+@*<div class="container pt-3">*@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="text-align:center">
+                <a class="btn btn-info mg-r-5"
+                   href="@Url.Action("AddWallet", "Wallet", new {Model.AccountNumber})"><span class="fa fa-pencil"></span><i class="pe-7s-edit btn-icon-wrapper"></i>Add Money</a>
+                @*href="@Url.Action("Transactions", "Customer", new { @cust.AccountNumber })"><span class="fa fa-pencil"></span><i class="pe-7s-edit btn-icon-wrapper"></i>Details</a>*@
+            </th>
+        </tr>
+    </thead>
+    @*<tbody>*@
+    @*@foreach (var item in Model.AccountNumber)
+        {
+            <tr>
+                <td style="text-align:right">
+                    <a class="btn btn-info mg-r-5"
+                       href="@Url.Action("AddWallet", "Wallet", new {@item})"><span class="fa fa-pencil"></span><i class="pe-7s-edit btn-icon-wrapper"></i>Add Money</a>*@
+    @*href="@Url.Action("Transactions", "Customer", new { @cust.AccountNumber })"><span class="fa fa-pencil"></span><i class="pe-7s-edit btn-icon-wrapper"></i>Details</a>*@
+    @*</td>
+            </tr>
+        }*@
+
+    @*</tbody>*@
+
+</table>
+@*</div>*@
+

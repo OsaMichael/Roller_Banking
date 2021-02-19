@@ -1,0 +1,179 @@
+﻿
+
+@model Roller.Repository.LoanRepos.LoanModel
+
+@{
+    ViewData["Title"] = "Register Loan";
+}
+
+<div class="container pt-3">
+
+    <h1>Register new customer</h1>
+    <p class="lead">Fields marked with * are required.</p>
+
+
+    @*<form asp-controller="Customer" asp-action="Register" method="POST" class="pt-2">*@
+    @using (Html.BeginForm("RegisterLoan", "Loan", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        @*<input type="hidden" name="customerId" value="@Model.CustomerId" />*@
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="Givenname"></label> *
+                <input asp-for="Givenname" class="form-control" Required>
+                <small><span asp-validation-for="Givenname"></span></small>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="Surname"></label> *
+                <input asp-for="Surname" class="form-control" Required>
+                <small><span asp-validation-for="Surname"></span></small>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="OtherNames"></label> *
+                <input asp-for="OtherNames" class="form-control" Required>
+                <small><span asp-validation-for="OtherNames"></span></small>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="EmailAdress"></label>
+                <input asp-for="EmailAdress" class="form-control" Required>
+                <small><span asp-validation-for="EmailAdress"></span></small>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="Address"></label> *
+                <input asp-for="Address" class="form-control" Required>
+                <small><span asp-validation-for="Address"></span></small>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="Country"></label> *
+                <input asp-for="Country" class="form-control" Required>
+                <small><span asp-validation-for="Country"></span></small>
+            </div>
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group col-md-4">
+                <label asp-for="City"></label> *
+                <input asp-for="City" class="form-control" Required>
+                <small><span asp-validation-for="City"></span></small>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="Phone"></label>
+                <input asp-for="Phone" class="form-control" Required>
+                <small><span asp-validation-for="Phone"></span></small>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="Birthday"></label>
+                <input asp-for="Birthday" type="date" name="Birthday" class="form-control" value="dd/MM/yyyy">
+                <small><span asp-validation-for="Birthday"></span></small>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="BVNNumber"></label>
+                <input asp-for="BVNNumber" type="text" class="form-control date-picker">
+                <small><span asp-validation-for="BVNNumber"></span></small>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4">
+                <input type="file" name="CustImageFile" class="imgInp form-control" accept=".png,.jpg,.jpeg,.gif,.tif" required />
+                @*</div>*@
+                @*<div class="col-md-offset-2 col-md-4">*@
+                <img src="@Url.Content("uploads\\img\\")@*@Model.ImageUrl" *@ asp-for="ImageUrl" width="150" height="150" class="img-upload" alt="Customer's Image" />
+            </div>
+
+            <div class="col-md-4">
+                <input type="file" name="ScannDocumentFile" class="imgInp form-control" accept=".png,.jpg,.jpeg,.gif,.tif" required />
+                @*</div>*@
+                @*<div class="col-md-offset-2 col-md-4">*@
+                <img src="@Url.Content("upload\\img\\")@*@Model.ImageUrl" *@ asp-for="ImageUrl" width="150" height="150" class="img-upload" alt="Scann Signature" />
+            </div>
+        </div>
+        <br />
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="Loan_Amount"></label> *
+                <input asp-for="Loan_Amount" class="form-control" Required>
+                <small><span asp-validation-for="Loan_Amount"></span></small>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="Interest_Rate"></label>
+                <input asp-for="Interest_Rate" class="form-control" Required>
+                <small><span asp-validation-for="Interest_Rate"></span></small>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="Duration"></label> *
+                <input asp-for="Duration" class="form-control"  placeholder="1 or 3 months" Required>
+                <small><span asp-validation-for="Duration"></span></small>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="LoanCause"></label> *
+                <input asp-for="LoanCause" class="form-control" Required>
+                <small><span asp-validation-for="LoanCause"></span></small>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Frequency"></label>
+            <div class="col-md-4">
+                <select id="frequency" name="frequency" class="form-control" Required>
+                    <option value="">Select package</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value=" Monthly">Monthly</option>
+                    <option value="Yearly">Yearly</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <span>Gender *</span>
+        </div>
+        <div class="form-group col-md-4">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" asp-for="Gender" value="male">Male
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" asp-for="Gender" value="female">Female
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" asp-for="Gender" value="other">Other
+                </label>
+            </div>
+            <br />
+            <small><span asp-validation-for="Gender"></span></small>
+        </div>
+
+        <div class="form-group pt-2">
+            <button type="submit" class="btn btn-outline-primary">Register</button>
+        </div>
+        @*</form>*@
+    }
+</div>
+
+
+@section scripts
+    {
+    <script>
+        $('.date-picker').datepicker({
+            language: "sv",
+            autoclose: "true",
+            format: "yyyy-mm-dd",
+        });
+    </script>
+}
+
+
+

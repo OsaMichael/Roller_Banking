@@ -1,0 +1,23 @@
+﻿<div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <img src="~/images/course_6.jpg" alt="Chania" width="2000" height="500">
+        <div class="carousel-caption">
+            <div class="row">
+                <div class="col-4">
+                    <partial name="_SearchByCustomerId" />
+                    <div class="row">
+                        <div class="col-12">
+                            @if (TempData["Error"] != null)
+                            {
+                                <p class="text-danger">@TempData["Error"]</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h3 class="text-right icon-filter_center_focus" style="color:aliceblue"><strong>Welcome to Roller Banking</strong></h3>
+            <p></p>
+        </div>
+    </div>
+</div>

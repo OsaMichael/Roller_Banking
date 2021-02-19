@@ -1,0 +1,37 @@
+﻿
+
+@using Roller.DataContext.Entity
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+@model BankStatisticsViewModel
+
+@if (SignInManager.IsSignedIn(User))
+{
+    @if (User.HasClaim(Claims.User, "true"))
+    {
+        <partial name="IndexUsers" />
+    }
+
+    @if (User.HasClaim(Claims.Admin, "true"))
+    {
+            <partial name="Index" />
+
+        // <partial name="Index" model="Model" />
+    }
+    @if (User.HasClaim(Claims.Cashier, "true"))
+    {
+        <partial name="IndexCashier" />
+    }
+}
+
+@*<script type="text/javascript">
+$(function () {
+$("#Redirect").click(function(){
+window.location.href = "@Url.Action("Index", "Home")";
+});
+});
+ </script>*@

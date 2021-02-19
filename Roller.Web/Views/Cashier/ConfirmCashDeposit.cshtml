@@ -1,0 +1,37 @@
+﻿@model ShowAcctAndCustViewModel
+    <br />
+    <br />
+    <br />
+    <br />
+  
+    <div class="card w-75">
+        <div class="card-header text-center list-group-item-primary">Bank statistics</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6 text-right">
+                    Account Number:
+                </div>
+                <div class="col-6 text-left">
+                    @Model.AccountNumber
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-right">
+                    Balance:
+                </div>
+                <div class="col-6 text-left">
+                    @Model.Balance
+                </div>
+            </div>
+        </div>
+        @*<div class="card-footer list-group-item-primary">
+                <div class="row">
+                    <div class="col-6 text-left">
+                        Total balance:
+                    </div>
+                    <div class="col-6 text-right font-weight-bold">
+                        @Model.TotalBalance
+                    </div>
+                </div>
+            </div>*@
+    </div>

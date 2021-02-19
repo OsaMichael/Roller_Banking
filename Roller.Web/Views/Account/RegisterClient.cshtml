@@ -1,0 +1,126 @@
+﻿@model Roller.Repository.Customers.CustomerProfile
+@{
+    ViewData["Title"] = "Register Client";
+}
+
+<div class="container pt-3">
+    <h1 class="bg-info text-white">Register User</h1>
+    <h1></h1>
+    <div class="row pt-3">
+        <div class="col-6">
+            <form asp-action="RegisterClient" asp-controller="Account" method="POST" autocomplete="off">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="EmailAdress"></label>
+                        <input asp-for="EmailAdress" class="form-control" autocomplete="nope" placeholder="Email..." />
+                        <span asp-validation-for="EmailAdress"></span>
+                    </div>
+                    <div></div>
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password" class="form-control" autocomplete="nope" placeholder="Password..." />
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="Surname"></label>
+                        <input asp-for="Surname" class="form-control" autocomplete="nope" placeholder="Surname..." />
+                        <span asp-validation-for="Surname"></span>
+                    </div>
+                    <div></div>
+                    <div class="form-group">
+                        <label asp-for="GivenName"></label>
+                        <input asp-for="GivenName" class="form-control" autocomplete="nope" placeholder="GivenName..." />
+                        <span asp-validation-for="GivenName"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="OtherNames"></label>
+                        <input asp-for="OtherNames" class="form-control" autocomplete="nope" placeholder="OtherNames..." />
+                        <span asp-validation-for="OtherNames"></span>
+                    </div>
+                    <div></div>
+                    <div class="form-group">
+                        <label asp-for="BVNNumber"></label>
+                        <input asp-for="BVNNumber" class="form-control" autocomplete="nope" placeholder="BVNNumber..." />
+                        <span asp-validation-for="BVNNumber"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="Address.Country"></label>
+                        <input asp-for="Address.Country" class="form-control" autocomplete="nope" placeholder="Country..." />
+                        <span asp-validation-for="Address.Country"></span>
+                    </div>
+                    <div></div>
+                    <div class="form-group">
+                        <label asp-for="Address.City"></label>
+                        <input asp-for="Address.City" class="form-control" autocomplete="nope" placeholder="City..." />
+                        <span asp-validation-for="Address.City"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="Birthday"></label>
+                        <input asp-for="Birthday" class="form-control" autocomplete="nope" placeholder="Birthday..." />
+                        <span asp-validation-for="Birthday"></span>
+                    </div>
+                    <div></div>
+                    <div class="form-group">
+                        <label asp-for="TelephoneNumber"></label>
+                        <input asp-for="TelephoneNumber" class="form-control" autocomplete="nope" placeholder="TelephoneNumber..." />
+                        <span asp-validation-for="TelephoneNumber"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="Address.StreetAdress"></label>
+                        <input asp-for="Address.StreetAdress" class="form-control" autocomplete="nope" placeholder="Address..." />
+                        <span asp-validation-for="Address.StreetAdress"></span>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="AccountType"></label>
+                        <div class="col-md-10">
+                            <select id="accountType" name="accountType" class="form-control">
+                                <option value="">Select package</option>
+                                <option value="Savings">Savings</option>
+                                <option value="Current">Current</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                    <div class="form-group">
+                        <span>Gender *</span>
+                    </div>
+                    <div class="form-row">
+                        @*<div class="form-group col-md-4">*@
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" asp-for="Gender" value="male">Male
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" asp-for="Gender" value="female">Female
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" asp-for="Gender" value="other">Other
+                            </label>
+                        </div>
+                        <br />
+                        <small><span asp-validation-for="Gender"></span></small>
+                        @*</div>*@
+                    </div>
+
+                    <div class="form-group text-right">
+                        <button class="btn btn-outline-primary">Register</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>

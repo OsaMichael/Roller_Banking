@@ -1,0 +1,109 @@
+﻿@model Roller.Repository.CashierRepo.TransferModel
+@{
+    ViewData["Title"] = "TransferBalance";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+@*@page section*@
+<div class="container-fluid">
+    <div class="row">
+        <!-- basic forms -->
+        <!-- forms cntrol -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+
+                <div class="card-content">
+                    <form class="form-horizontal" action="@Url.Action("TransferBalance","Cashier")" method="post">
+                        @Html.AntiForgeryToken()
+                        @*@Html.ValidationSummary(true)*@
+                        <input type="hidden" name="AccountNumber_from" value="@Model.AccountNumber_from" />
+                        @*<input type="hidden" name="LoanId" value="@Model.LoanId" />*@
+                        <fieldset>
+                            <tr>
+
+                                <td>
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">AccountNumber  <span class="text-danger">*</span></label>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { id = "", @class = "form-control", @readonly = "readonly"} })
+                                                @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Destination Account <span class="text-danger">*</span></label>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                @Html.EditorFor(model => model.AccountNumber_to, new { htmlAttributes = new { id = "AccountNumber_to", @class = "form-control", @type = "text", required = "required" } })
+                                                @Html.ValidationMessageFor(model => model.AccountNumber_to, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Amount <span class="text-danger">*</span></label>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                @Html.EditorFor(model => model.Amount, new { htmlAttributes = new { id = "amount", @class = "form-control", @type = "text", required = "required" } })
+                                                @Html.ValidationMessageFor(model => model.Amount, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Description <span class="text-danger"></span></label>
+                                        <div class="col-md-12">
+                                            <div class="input-field">
+                                                @Html.TextAreaFor(model => model.Description, new { htmlAttributes = new { id = "Description", @class = "form-control", @type = "text" } })
+                                                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                @*<td>
+            <div class="form-group row">
+                <label asp-for="AccoutType"></label>
+                <div class="col-md-4">
+                    <select id="accoutType" name="accoutType" class="form-control">
+                        <option value="">Select package</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Current">Current</option>
+                    </select>
+                </div>
+            </div>
+        </td>*@
+                                <td>
+                            </tr>
+
+                            <div class="form-group">
+                                <label class="col-md-8 control-label"></label>
+                                <div class="col-md-4">
+
+                                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-send"></span>  Submit</button>
+
+                                    <a href="@Url.Action("SearchCustToTransferFrom","Customer")" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Back</a>
+                                </div>
+
+                            </div>
+                            <br />
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*./bootstrap forms*@
+</div>

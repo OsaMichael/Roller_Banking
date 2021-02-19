@@ -1,0 +1,82 @@
+﻿
+@model Roller.Repository.Customers.EditProfileDto
+
+@{
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "update profile";
+}
+<br />
+<br />
+<br />
+<br />
+<div class="container pt-3">
+
+    <h4>update your profile</h4>
+    @*<p class="lead">Fields marked with * are required.</p>*@
+
+
+    @*<form asp-controller="Customer" asp-action="Register" method="POST" class="pt-2">*@
+    @using (Html.BeginForm("Update", "Profile", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+       <input type="hidden" name="customerId" value="@Model.CustomerId" />
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="GivenName"></label> *
+                <input asp-for="GivenName" class="form-control">
+                <small><span asp-validation-for="GivenName"></span></small>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="Surname"></label> *
+                <input asp-for="Surname" class="form-control">
+                <small><span asp-validation-for="Surname"></span></small>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="OtherNames"></label> *
+                <input asp-for="OtherNames" class="form-control">
+                <small><span asp-validation-for="OtherNames"></span></small>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="EmailAdress"></label>
+                <input asp-for="EmailAdress" class="form-control" readonly="readonly">
+                <small><span asp-validation-for="EmailAdress"></span></small>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="StreetAddress"></label> *
+                <input asp-for="StreetAddress" class="form-control">
+                <small><span asp-validation-for="StreetAddress"></span></small>
+            </div>
+            <div class="col-md-4">
+                <input type="file" name="CustImageFile" class="imgInp form-control" accept=".png,.jpg,.jpeg,.gif,.tif" required />
+                <img src="@Url.Content("uploads\\img\\")@*@Model.ImageUrl" *@ asp-for="ImageUrl" width="150" height="150" class="img-upload" alt="Customer's Image" />
+            </div>
+        </div>
+
+        <br />
+
+        <div class="form-group pt-2">
+            <button type="submit" class="btn btn-outline-primary">Save</button>
+        </div>
+        @*</form>*@
+    }
+</div>
+
+
+@section scripts
+    {
+    <script>
+        $('.date-picker').datepicker({
+            language: "sv",
+            autoclose: "true",
+            format: "yyyy-mm-dd",
+        });
+    </script>
+}
+
+

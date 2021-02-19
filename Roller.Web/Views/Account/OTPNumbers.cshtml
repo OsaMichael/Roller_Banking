@@ -1,0 +1,29 @@
+﻿@model Roller.Web.Models.OTPModel
+@using Roller.Web.Models
+@{
+    ViewData["Title"] = "OTPNumbers";
+}
+
+<br />
+<br />
+<div class="container pt-3">
+    <br />
+    <br />
+    <h3 class="bg-info size1of2 text-white"><small>Enter OTP sent to mail</small> </h3>
+    <h1></h1>
+    <div class="row pt-3">
+        <div class="col-6">
+            <form asp-action="OTPNumbers" asp-controller="Account" method="POST" autocomplete="off">
+                <div class="form-group">
+                    @*<label asp-for="Email"></label>*@
+                    <input asp-for="OTP" class="form-control" autocomplete="nope" placeholder="otp..." />
+                    <span asp-validation-for="OTP"></span>
+                </div>
+                <div class="form-group text-right">
+                    <button class="btn btn-outline-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
