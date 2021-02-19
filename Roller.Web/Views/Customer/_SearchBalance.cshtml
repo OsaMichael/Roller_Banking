@@ -1,0 +1,89 @@
+﻿@*@model Roller.Repository.Customers.CustomerListViewModel*@
+@using Roller.Repository.Extensions
+@model IEnumerable<Roller.Repository.Customers.CustomerDto>
+
+@{
+    ViewData["Title"] = "Search";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+@*@if (!Model.Accounts.Any())
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center pt-3">
+                    <p class="lead">No customers found matching @Model.FullName @Model.AccountNumber </p>
+                    <a asp-controller="Customer" asp-action="ShowBalace" class="btn btn-outline-primary text-secondary"><i class="fas fa-backward"></i> Back</a>
+                </div>
+
+            </div>
+        </div>
+    }
+    else
+    {*@
+<div class="container pt-5">
+    <div class="table-responsive">
+        <table class="table table-striped table-sm w-75 offset-2">
+            <thead class="text-center">
+                <tr>
+                    <th>Account number</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                @foreach (var acc in Model)
+                {
+                    <tr>
+                        <td>@acc.AccountNumber</td>
+                        <td>@acc.Balance.ToSwedishKrona()</td>
+                    </tr>
+                }
+            </tbody>
+            @*<tfoot>
+                    <tr>
+                        <th></th>
+                        <th class="text-right">Total Balance: @Model.TotalBalance</th>
+                    </tr>
+                </tfoot>*@
+        </table>
+    </div>
+</div>
+
+
+@*}*@
+
+@*<div class="container pt-5">
+        <div class="table-responsive">
+            <table class="table table-striped table-sm w-75 offset-2">
+                <thead class="text-center">
+                    <tr>
+                        <th>Account number</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    @foreach (var acc in Model.Accounts)
+                    {
+                        <tr>
+
+                            <td>
+                                <a class="btn btn-info mg-r-5" style="width:120px"
+                                   href="@Url.Action("Details", "Account", new { @acc.AccountNumber})"><span class="fa fa-pencil"></span><i class="pe-7s-edit btn-icon-wrapper"></i>@acc.AccountNumber</a>
+                            </td>
+                            <td>@acc.Balance.ToSwedishKrona()</td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th class="text-right">Total Balance: @Model.TotalBalance</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>*@

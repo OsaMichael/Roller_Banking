@@ -1,0 +1,148 @@
+﻿@using Roller.Repository.Extensions
+@model Roller.Repository.Customers.CustomerDto
+@using Roller.Repository
+@*@model Bank.Application.Customers.Queries.GetCustomerDetails.CustomerDto*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Customer details";
+
+}
+<br />
+<br />
+<br />
+<br />
+
+<div class="container pb-3 pt-3">
+
+    @*@if (TempData["Message"] != null)
+        {
+            <partial name="_AlertSuccess" />
+        }*@
+
+    <div class="row">
+        <div class="col-4">
+            <h5 class="pb-1"><i class="far fa-user"></i> Profile</h5>
+            <address>
+                <strong><i class="fas fa-id-card-alt"></i> #@Model.AccountNumber @Model.FullName</strong><br>
+
+                @Model.Address.StreetAdress<br>
+                @*@Model.Address.ZipCode*@ @Model.Address.City, @Model.Address.Country<br>
+                <abbr title="Phone">Phone:</abbr> @Model.TelephoneNumber
+            </address>
+            <p>
+                <i class="fas fa-birthday-cake"></i> Birthday: @Model.PrintBirthday()<br />
+                @*<i class="fas fa-flag"></i> National ID: @Model.NationalId<br />*@
+                @switch (Model.Gender)
+                {
+                    case "Male":
+                        <i class="fas fa-mars"></i> @Model.Gender
+                        break;
+                    case "Female":
+                        <i class="fas fa-venus"></i> @Model.Gender
+                        break;
+                    default:
+                        <span>Gender: @Model.Gender</span>
+                        break;
+                }
+            </p>
+            <address>
+                <i class="fas fa-envelope"></i> <a href="mailto:@Model.EmailAdress">@Model.EmailAdress</a>
+            </address>
+
+        </div>
+        @*@if (Model.Cards.Any())
+            {
+                <div class="col-6">
+                    <h5 class="pb-1"><i class="far fa-credit-card"></i> Credit Cards</h5>
+                    @foreach (var card in Model.Cards)
+                    {
+                        <p>
+                            @card.CcType @card.Type <br />
+                            @card.CcNumber <br />
+                            Issued: @card.Issued.Date.ToString("yyy-MM-dd") <br />
+                            Expiration: @card.ExpM/@card.ExpY<br />
+                        </p>
+                    }
+                </div>
+            }*@
+        @*<div class="col-2">
+                <a class="btn btn-outline-primary" asp-controller="Customer" asp-action="Edit" asp-route-id="@Model.AccountNumber">Edit Customer</a>
+            </div>*@
+    </div>
+
+
+    @*/////////////////////////////////*@
+
+    @*put a form to deposit amount*@
+    <hr />
+    <ol class="breadcrumb page-breadcrumb pull-right"></ol>
+
+    <form asp-controller="Cashier" asp-action="CashDeposit" method="POST" class="pt-2">
+        <input type="hidden" name="AccountNumber" value="@Model.AccountNumber" />
+        <input type="hidden" name="CustomerId" value="@Model.CustomerId" />
+        <div class="form-row">
+            <div>
+                <div class="form-group col-lg-12">
+                    <label asp-for="Amount"></label> *
+                    <input asp-for="Amount" class="form-control">
+                    <small><span asp-validation-for="Amount"></span></small>
+                </div>
+                <div class="form-group col-lg-12">
+                    <label asp-for="ReferenceNo"></label> *
+                    <input asp-for="ReferenceNo" class="form-control">
+                    <small><span asp-validation-for="ReferenceNo"></span></small>
+                </div>
+            </div>
+            <div>
+                <div class="form-group col-lg-12">
+                    <label asp-for="Depositor"></label> *
+                    <input asp-for="Depositor" class="form-control">
+                    <small><span asp-validation-for="Depositor"></span></small>
+                </div>
+                <div class="form-group col-lg-12">
+                    <label asp-for="Attendant"></label> *
+                    <input asp-for="Attendant" class="form-control">
+                    <small><span asp-validation-for="Attendant"></span></small>
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group pt-2">
+            <button type="submit" class="btn btn-outline-primary">Post</button>
+        </div>
+    </form>
+</div>
+@*/////////////////////////////////*@
+
+@*<div class="container pt-5">
+    <div class="table-responsive">
+        <table class="table table-striped table-sm w-75 offset-2">
+            <thead class="text-center">
+                <tr>
+                    <th>Account number</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                @foreach (var acc in Model.Accounts)
+                {
+                <tr>*@
+@*<th scope="row"><a asp-controller="Account" asp-action="Details" asp-route-id="@acc.AccountI">@acc.AccountId</a></th>*@
+
+@*<td>
+                            <a class="btn btn-info mg-r-5" style="width:120px"
+                               href="@Url.Action("Details", "Account", new { @acc.AccountNumber})"><span class="fa fa-pencil"></span><i class="pe-7s-edit btn-icon-wrapper"></i>@acc.AccountNumber</a>
+                        </td>
+                        <td>@acc.Balance.ToSwedishKrona()</td>
+                    </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th class="text-right">Total Balance: @Model.TotalBalance</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>*@

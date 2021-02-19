@@ -1,0 +1,49 @@
+﻿
+@using Roller.Repository.UserClaim
+<ul class="navbar-nav mr-auto">
+    @if (User.HasClaim(Claims.User, "true"))
+    {
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Customer" asp-action="Register"> Register Customer</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Customer" asp-action="Index3">Search Customers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Customer" asp-action="Index">Deposit</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Customer" asp-action="Index2">Withdrawal</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Loan" asp-action="RegisterLoan">Register Loan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Loan" asp-action="AllacTiveLoans">Active Loans</a>
+        </li>
+
+    }
+    @if (User.HasClaim(Claims.Admin, "true"))
+    {
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Register"> Register User</a>
+
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="Roles"> Manage Roles</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="UserList"> Manage Users</a>
+        </li>
+    }
+
+</ul>
+
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+        <form asp-controller="Account" asp-action="Logout" method="POST">
+            <button class="nav-link"><i class="fas fa-sign-out-alt"></i> Sign out - @User.Identity.Name</button>
+        </form>
+    </li>
+</ul>

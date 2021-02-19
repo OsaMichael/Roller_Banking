@@ -1,0 +1,184 @@
+﻿@model Roller.Repository.Services.TransactionModel
+@{
+    ViewData["Title"] = "CybPayment";
+    ////Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    .page-content-wrapper, table {
+        font-size: 13px !important;
+    }
+
+    @@import "compass/css3";
+
+    .table-editable {
+        position: relative;
+        .glyphicon
+
+    {
+        font-size: 20px;
+    }
+
+    }
+
+    .table-remove {
+        color: #700;
+        cursor: pointer;
+        &:hover
+
+    {
+        color: #f00;
+    }
+
+    }
+
+    .table-up, .table-down {
+        color: #007;
+        cursor: pointer;
+        &:hover
+
+    {
+        color: #00f;
+    }
+
+    }
+
+    .table-add {
+        color: #070;
+        cursor: pointer;
+        position: absolute;
+        top: 8px;
+        right: 0;
+        &:hover
+
+    {
+        color: #0b0;
+    }
+    }
+</style>
+
+<div class="page-content-wrapper">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card card-topline-red">
+                        <div class="card-head">
+                            @*<header>@ViewBag.feeName</header>*@
+
+                        </div>
+                        <div class="card-body ">
+                            <section class="panel panel-default">
+                                <header class="panel-heading font-bold"></header>
+                                <div class="" style="; margin-left:5px">
+                                    @*<h4> Welcome @User.Identity.Name </h4>*@
+
+                                    <p>
+                                        Kindly click on the procced to payment gateway to initial your payment.
+                                    </p>
+
+
+                                    <p>
+                                        Note: <br />
+                                        Ensure you follow the payment procedure as directed by the payment gateway
+                                    </p>
+                                </div>
+                            </section>
+                            <div class="col-md-12 " style="">
+                                <img src="~/Content/images/Cyberpay.png" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card card-topline-yellow">
+                        <div class="card-head">
+                            <header> Fee Payment Detail</header>
+
+                        </div>
+                        <div class="card-body ">
+                            <section class="panel panel-default">
+                                <header class="panel-heading font-bold"></header>
+                                <div class="fee">
+                                    @if (@ViewBag.HasReference == false)
+                                    {
+                                        using (Html.BeginForm("GenerateReference", null, FormMethod.Post, new { @class = "form-vertical" }))
+                                        {
+
+                                            <table class="table table-bordered table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <td>CustomerID</td>
+                                                        <td>
+                                                            @Model.CustomerID
+                                                            <input type="hidden" name="CustomerID" value="@Model.CustomerID">
+                                                        </td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>FullName</td>
+                                                        <td>
+                                                            @Model.FullName
+                                                            <input type="hidden" name="FullName" value="@Model.FullName">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Amount</td>
+                                                        <td>
+                                                            @Model.Amount
+                                                            <input type="hidden" name="Value" value="@Model.Amount">
+                                                            <input type="hidden" name="Amount" value="@Model.Amount">
+                                                        </td>
+                                                    </tr>
+
+                                                    @*<tr>
+                                                            <td>PhoneNumber (Optional)</td>
+                                                            <td>
+
+                                                                <input type="hidden" name="PaymentChannel" value="@Model.PaymentChannel">
+                                                                <input type="hidden" name="PaymentDescription" value="@Model.PaymentDescription">
+                                                                <input type="hidden" name="FeeScheduleId" value="@Model.FeeScheduleId">
+                                                                <input type="hidden" name="FeeTypeId" value="@Model.FeeTypeId">
+                                                                <input type="hidden" name="SessionId" value="@Model.SessionId">
+                                                                <input type="hidden" name="CustomerID" value="@Model.CustomerID">
+                                                                <input type="hidden" name="ProgrammeId" value="@Model.ProgrammeId">
+                                                                <input type="hidden" name="ModeOfStudyId" value="@Model.ModeOfStudyId">
+                                                                <input type="hidden" name="CourseOfStudyId" value="@Model.CourseOfStudyId">
+                                                                <input type="hidden" name="LevelId" value="@Model.LevelId">
+                                                                <input type="hidden" name="SemesterId" value="@Model.SesmesterId">
+                                                            </td>
+                                                        </tr>*@
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            @*<a class="btn btn-large btn-info btn-primary" href="http://cyberpay.cybservice.com/remita/transaction/list/tsudlc?search=@Model.CustomerID" style="margin-top: 10px; margin-left: 5px"> Click To Requery Payments</a>*@
+                                                            <input type="submit" value="Proceed To Payment Gateway" class="btn btn-large btn-info btn-primary" style="margin-top: 10px; margin-left: 5px" />
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        }
+                                    }
+
+                                    else
+                                    {
+
+
+                                    }
+                                    <br />
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

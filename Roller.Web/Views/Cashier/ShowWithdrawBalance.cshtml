@@ -1,0 +1,32 @@
+﻿@using Roller.Repository
+<br />
+<br />
+<br />
+<br />
+@{
+    var acct = ViewBag.account;
+
+    var bal = ViewBag.balance;
+}
+<div class="card w-75">
+    <div class="card-header text-center list-group-item-primary">Account Details</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-6 text-right">
+                Account Number:
+            </div>
+            <div class="col-6 text-left">
+                @acct
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-right">
+                Account Balance:
+            </div>
+            <div class="col-6 text-left">
+                @bal
+            </div>
+        </div>
+        <a asp-controller="Customer" asp-action="Index2" class="btn btn-outline-primary text-secondary"><i class="fas fa-backward"></i> Back</a>
+    </div>
+</div>

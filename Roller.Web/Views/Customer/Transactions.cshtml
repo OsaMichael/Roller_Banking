@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Roller.Repository.TransactRepo.TransactionDto>
+@{
+    ViewData["Title"] = "Transactions";
+}
+<br />
+<br />
+<br />
+<br />
+<table class="table table-striped table-bordered table-hover  order-column valign-middle" id="example4">
+    <thead>
+        <tr>
+            <th>Account Number</th>
+            <th>Depositor</th>
+            <th>Attendant</th>
+            <th>Type</th>
+            <th>Amount </th>
+            <th>Teller No </th>
+            <th>Date </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>@Html.DisplayFor(modelItem => item.AccountNumber)</td>
+                <td>@Html.DisplayFor(modelItem => item.Depositor)</td>
+                <td>@Html.DisplayFor(modelItem => item.Attendant)</td>
+                <td>@Html.DisplayFor(modelItem => item.Type)</td>
+                <td>@Html.DisplayFor(modelItem => item.Amount)</td>
+                <td>@Html.DisplayFor(modelItem => item.ReferenceNo)</td>
+                <td>@Html.DisplayFor(modelItem => item.Tr_Date)</td>
+                @*<td>@String.Format("{0:d}", item.Tr_Date)</td>*@
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+

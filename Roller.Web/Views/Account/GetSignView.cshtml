@@ -1,0 +1,28 @@
+﻿
+
+@*@using Roller.DataContext.Entity
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+    @if (User.HasClaim(Claims.User, "true"))
+    {
+        <partial name="IndexUsers" />
+    }
+
+    @if (User.HasClaim(Claims.Admin, "true"))
+    {
+        <partial name="Index" />
+    }
+    @if (User.HasClaim(Claims.Cashier, "true"))
+    {
+        <partial name="IndexCashier" />
+    }
+
+
+}*@

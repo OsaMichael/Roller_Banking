@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Roller.Repository.LoanRepos.LoanModel>
+@{
+   // ViewData["Title"] = "AllacTiveLoans";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2>All Loan Accounts</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Account Number:
+        </th>
+        <th>
+            loan officier
+        </th>
+        <th>
+            Loan Amount
+        </th>
+        <th>
+            Interest Rate
+        </th>
+        <th>
+            Amount Paid
+        </th>
+        <th>
+            Sum Total
+        </th>
+        <th>
+            Loan Date
+        </th>
+        <th>
+            Duration
+        </th>
+        <th>
+            Deadline
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccountNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoanOfficier)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Loan_Amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Interest_Rate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Loan_Amount_Paid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AmountTo_Pay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Loan_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Duration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Deadline)
+        </td>
+    </tr>
+    }
+
+</table>

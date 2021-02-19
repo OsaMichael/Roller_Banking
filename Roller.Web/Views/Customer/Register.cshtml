@@ -1,0 +1,198 @@
+﻿@*@{
+        ViewData["Title"] = "Register";
+    }*@
+
+@model Roller.Repository.Customers.CustomerProfile
+
+@{
+    ViewData["Title"] = "Register Customer";
+}
+
+<div class="container pt-3">
+
+    @*@if (TempData["Message"] != null)
+        {
+            <partial name="_AlertSuccess" />
+        }
+        @if (TempData["Error"] != null)
+        {
+            <partial name="_AlertError" />
+        }*@
+
+    <h1>Register new customer</h1>
+    <p class="lead">Fields marked with * are required.</p>
+
+
+    @*<form asp-controller="Customer" asp-action="Register" method="POST" class="pt-2">*@
+    @using (Html.BeginForm("Register", "Customer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        @*<input type="hidden" name="customerId" value="@Model.CustomerId" />*@
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label asp-for="GivenName"></label> *
+                <input asp-for="GivenName" class="form-control">
+                <small><span asp-validation-for="GivenName"></span></small>
+            </div>
+            <div class="form-group col-md-5">
+                <label asp-for="Surname"></label> *
+                <input asp-for="Surname" class="form-control">
+                <small><span asp-validation-for="Surname"></span></small>
+            </div>
+            <div class="form-group col-md-5">
+                <label asp-for="OtherNames"></label> *
+                <input asp-for="OtherNames" class="form-control">
+                <small><span asp-validation-for="OtherNames"></span></small>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Address.StreetAdress"></label> *
+                <input asp-for="Address.StreetAdress" class="form-control">
+                <small><span asp-validation-for="Address.StreetAdress"></span></small>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="EmailAdress"></label>
+                <input asp-for="EmailAdress" class="form-control">
+                <small><span asp-validation-for="EmailAdress"></span></small>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="Address.City"></label> *
+                <input asp-for="Address.City" class="form-control">
+                <small><span asp-validation-for="Address.City"></span></small>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="Address.Country"></label> *
+                <input asp-for="Address.Country" class="form-control">
+                <small><span asp-validation-for="Address.Country"></span></small>
+            </div>
+        </div>
+
+        <div class="form-row">
+
+            @*<div class="form-group col-md-2">
+                    <label asp-for="CreatedAt"></label>
+                    <input asp-for="CreatedAt" class="form-control">
+                    <small><span asp-validation-for="CreatedAt"></span></small>
+                </div>*@
+            <div class="form-group col-md-4">
+                <label asp-for="TelephoneNumber"></label>
+                <input asp-for="TelephoneNumber" class="form-control">
+                <small><span asp-validation-for="TelephoneNumber"></span></small>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label asp-for="Birthday"></label>
+                <input asp-for="Birthday" type="date" name="Birthday" class="form-control" value="dd/MM/yyyy">
+                <small><span asp-validation-for="Birthday"></span></small>
+            </div>
+            <div class="form-group col-md-5">
+                <label asp-for="BVNNumber"></label>
+                <input asp-for="BVNNumber" type="text" class="form-control date-picker">
+                <small><span asp-validation-for="BVNNumber"></span></small>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="file" name="CustImageFile" class="imgInp form-control" accept=".png,.jpg,.jpeg,.gif,.tif" required />
+            </div>
+            <div class="col-md-offset-2 col-md-10">
+                <img src="@Url.Content("uploads\\img\\")@*@Model.ImageUrl" *@ asp-for="ImageUrl" width="150" height="150" class="img-upload" alt="Customer's Image" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="file" name="ScannDocumentFile" class="imgInp form-control" accept=".png,.jpg,.jpeg,.gif,.tif" required />
+            </div>
+            <div class="col-md-offset-2 col-md-10">
+                <img src="@Url.Content("upload\\img\\")@*@Model.ImageUrl" *@ asp-for="ImageUrl" width="150" height="150" class="img-upload" alt="Scann Signature" />
+            </div>
+        </div>
+        <div class="form-group">
+            <span>Gender *</span>
+        </div>
+
+        <div class="form-group">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" asp-for="Gender" value="male">Male
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" asp-for="Gender" value="female">Female
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" asp-for="Gender" value="other">Other
+                </label>
+            </div>
+            <br />
+            <small><span asp-validation-for="Gender"></span></small>
+        </div>
+        <div class="form-group row">
+            <label asp-for="AccountType"></label>
+            <div class="col-md-4">
+                <select id="accountType" name="accountType" class="form-control">
+                    <option value="">Select Account</option>
+                    <option value="Savings">Savings</option>
+                    <option value="Current">Current</option>
+                    <option value="Loan">Loan</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group pt-2">
+            <button type="submit" class="btn btn-outline-primary">Register</button>
+        </div>
+        @*</form>*@
+    }
+</div>
+<div class="section-bg style-1" style="background-image: url('/images/course_6.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                <span class="icon flaticon-mortarboard"></span>
+                <h3>Our Philosphy</h3>
+                @*<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea? Dolore, amet reprehenderit.</p>*@
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                <span class="icon flaticon-school-material"></span>
+                <h3>Our Principle</h3>
+                @*<p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea?
+                        Dolore, amet reprehenderit.
+                    </p>*@
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                <span class="icon flaticon-library"></span>
+                <h3>Key of Success</h3>
+                @*<p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea?
+                        Dolore, amet reprehenderit.
+                    </p>*@
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts
+    {
+    <script>
+        $('.date-picker').datepicker({
+            language: "sv",
+            autoclose: "true",
+            format: "yyyy-mm-dd",
+        });
+    </script>
+}
+
+
+

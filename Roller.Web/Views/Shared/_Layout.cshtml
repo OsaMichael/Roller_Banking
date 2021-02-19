@@ -1,0 +1,329 @@
+﻿
+@using Roller.DataContext.Entity
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+@using Roller.Repository.UserClaim
+@using Roller.Repository
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+    <title>@ViewData["Title"] - Roller</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="~/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/jquery-ui.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="~/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="~/css/aos.css">
+    <link href="~/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/HomePage.css">
+    <link rel="stylesheet" href="~/css/jqModal.css">
+    <link rel="stylesheet" href="~/css/jquery.jqplot.min.css">
+    @*<link rel="stylesheet" href="~/sweetAlert/sweetalert.css" />*@
+
+    <link href="~/sweetAlert/sweetalert.css" rel="stylesheet" />
+    <script src="~/sweetAlert/sweetalert.min.js"></script>
+
+    <script src="~/js/main.js"></script>
+    <script src="~/sweetAlert/sweetalert.min.js"></script>
+
+
+
+    @*@RenderSection("scripts", required: false)*@
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>
+
+
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div class="site-wrap">
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+        <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <div class="site-logo">
+                        <a href="/" class="d-block text-sm-left">
+                            <img src="~/images/logo0.png" alt="Image" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="mr-auto">
+
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+
+                            @*<partial name="_Navbar" />*@
+
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                @if (User.HasClaim(Claims.User, "true"))
+                                {
+                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                <li class="active">
+                                    @*<a href="" class="nav-link text-left">Home</a>*@
+                                    <a class="nav-link  text-left" asp-area="" asp-controller="Home" asp-action="IndexUsers">Home</a>
+                                </li>
+                                <li class="has-children">
+                                    <a href="" class="nav-link text-left">About Us</a>
+                                    <ul class="dropdown">
+                                        @*<li><a href="teachers.html">Our Teachers</a></li>*@
+                                        <li><a asp-controller="Home" asp-action="about">About Us</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-children">
+                                    <a href="" class="nav-link text-left">Profile</a>
+                                    <ul class="dropdown">
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-area="" asp-controller="Profile" asp-action="Update">Update Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-area="" asp-controller="Wallet" asp-action="Index">Wallet</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-area="" asp-controller="" asp-action="">Transfer</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-area="" asp-controller="" asp-action="">Pay Bills</a>
+                                        </li>
+                                        @*/////////////////*@
+                                    </ul>
+                                </li>
+                                <li class="nav-item" style="right:auto">
+                                    <form asp-controller="Account" asp-action="Logout" method="POST">
+                                        <button class="nav-link"><i class="fas fa-sign-out-alt"></i>@User.Identity.Name</button>
+                                    </form>
+                                </li>
+                            </ul>
+
+                                }
+
+
+                                @if (User.HasClaim(Claims.Admin, "true"))
+                                {
+                                    <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                        <li class="active">
+                                            <a href="" class="nav-link text-left">Home</a>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="" class="nav-link text-left">About Us</a>
+                                            <ul class="dropdown">
+                                                @*<li><a href="teachers.html">Our Teachers</a></li>*@
+                                                <li><a asp-controller="Home" asp-action="about">About Us</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="" class="nav-link text-left">Manage Collections</a>
+                                            <ul class="dropdown">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Register"> Register User</a>
+
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="Roles"> Manage Roles</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="UserList"> Manage Users</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="Index"> Manage Users Claims</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link" asp-area="" asp-controller="Loan" asp-action="AllacTiveLoans">Active Loans</a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+                                        <li>
+             
+                                            <form asp-controller="Account" asp-action="Logout" method="POST">
+                                                <button class="nav-link" style="text-align:right"><i class="fas fa-sign-out-alt"></i> Sign out - @User.Identity.Name</button>
+                                            </form>
+
+                                        </li>
+
+                                    </ul>
+                                }
+
+                                @if (User.HasClaim(Claims.Cashier, "true"))
+                                {
+                                    <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                        <li class="active">
+                                            <a href="" class="nav-link text-left">Home</a>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="" class="nav-link text-left">About Us</a>
+                                            <ul class="dropdown">
+                                                @*<li><a href="teachers.html">Our Teachers</a></li>*@
+                                     <li><a asp-controller="Home" asp-action="about">About Us</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="" class="nav-link text-left">Transactions</a>
+                                            <ul class="dropdown">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" asp-area="" asp-controller="Loan" asp-action="RegisterLoan">Register Loan</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" asp-area="" asp-controller="Customer" asp-action="Index3">Search Customers</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" asp-area="" asp-controller="Customer" asp-action="Index">Deposit</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" asp-area="" asp-controller="Customer" asp-action="Index2">Withdrawal</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link" asp-area="" asp-controller="Loan" asp-action="ActivateLoan">Activate Loan</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" asp-area="" asp-controller="Cashier" asp-action="CashierTransfer">Transfer money</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <form asp-controller="Account" asp-action="Logout" method="POST">
+                                                <button class="nav-link" style="text-align:right"><i class="fas fa-sign-out-alt"></i> Sign out - @User.Identity.Name</button>
+                                            </form>
+
+                                        </li>
+
+                                    </ul>
+                                }
+
+                            }
+                            else
+                            {
+                                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                    <li class="active">
+                                        <a href="/" class="nav-link text-left">Home</a>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="" class="nav-link text-left">About Us</a>
+                                        <ul class="dropdown">
+                                            <li><a asp-controller="Home" asp-action="about">About Us</a></li>
+                                            @*<li> <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Register"> Register User</a></li>*@
+                                        </ul>
+                                    </li>
+
+                                    <li> <a asp-area="" asp-controller="Account" asp-action="Login"><i class="fas fa-sign-in-alt"></i>Sign in</a></li>
+                                    <li></li>
+                                    @*<li> <a asp-area="" asp-controller="#" asp-action="EMAIL_OTP"><i class="fas fa-sign-in-alt"></i>Register</a></li>*@
+                                </ul>
+                            }
+                        </nav>
+                    </div>
+                    <div class="ml-auto">
+                        <div class="social-wrap">
+                            @*<a href="#"><span class="icon-facebook"></span></a>
+                                <a href="#"><span class="icon-twitter"></span></a>
+                                <a href="#"><span class="icon-linkedin"></span></a>*@
+                            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black">
+                                <span class="icon-menu h3"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <partial name="_CookieConsentPartial" />
+            <main role="main" class="pb-3">
+                <partial name="_NotificationPanel" />
+                @*@Html.Partial("_NotificationPanel")*@
+
+                @RenderBody()
+            </main>
+        </div>
+        <footer class="border-top footer text-muted">
+            <div class="container" style="ruby-align:center">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &copy;2020 - Roller Banking <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+
+        </footer>
+    </div>
+    @*<div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#51be78" /></svg></div>*@
+
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <script src="~/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="~/js/jquery-ui.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.stellar.min.js"></script>
+    <script src="~/js/jquery.countdown.min.js"></script>
+    <script src="~/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/js/jquery.easing.1.3.js"></script>
+    <script src="~/js/aos.js"></script>
+    <script src="~/js/jquery.fancybox.min.js"></script>
+    <script src="~/js/jquery.sticky.js"></script>
+    <script src="~/js/jquery.mb.YTPlayer.min.js"></script>
+
+
+    <script src="~/js/main.js"></script>
+    <script src="~/sweetAlert/sweetalert.min.js"></script>
+
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+
+    @*<script src="~/js/site.js" asp-append-version="true"></script>*@
+    @RenderSection("scripts", required: false)
+    @*@RenderSection("scripts")*@
+
+</body>
+</html>
+

@@ -1,0 +1,164 @@
+﻿
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/course_6.jpg" alt="Chania" width="2000" height="500">
+            <div class="carousel-caption">
+                <div class="row">
+                    <div class="col-4">
+                        <partial name="_SearchByCustomerId" />
+                        <div class="row">
+                            <div class="col-12">
+                                @if (TempData["Error"] != null)
+                                {
+                                    <p class="text-danger">@TempData["Error"]</p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <h3 class="text-right icon-filter_center_focus"  style="color:aliceblue" ></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+@*<div class="hero-slide owl-carousel site-blocks-cover">
+    <div class="intro-section" style="background-image: url('/images/bankin1.jpg')">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
+                    <h3 style="color:aliceblue">Our Services</h3>
+                </div>
+            </div>
+        </div>
+    </div>*@
+    @*<div class="intro-section" style="background-image: url('/images/bankin12.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
+                    <h3 style="color:aliceblue">Our Services</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro-section" style="background-image: url('/images/banking10.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
+                    <h3 style="color:aliceblue">Our Services</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro-section" style="background-image: url('/images/banking8.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
+                    <h3 style="color:aliceblue">Our Services</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-bg style-1" style="background-image: url('/images/course_6.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2 class="section-title-underline style-2">
+                    <span>About Our Banking</span>
+                </h2>
+            </div>
+            <div class="col-lg-8">
+                <p class="lead"> type it here.</p>
+                <p><a href="#">Read more</a></p>
+            </div>
+        </div>
+    </div>
+</div>*@
+<!-- // 05 - Block -->
+@*<div class="site-section">
+    <div class="container">
+    </div>
+</div>*@
+
+@*<div class="section-bg style-1" style="background-image: url('/images/course_6.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                <span class="icon flaticon-mortarboard"></span>
+                <h3>Our Philosphy</h3>
+                       </div>
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                <span class="icon flaticon-school-material"></span>
+                <h3>Our Principle</h3>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                <span class="icon flaticon-library"></span>
+                <h3>Key of Success</h3>
+            </div>
+        </div>
+    </di*@
+</div>
+
+@section Scripts
+    {
+    <script>
+        (function (w, d) {
+            const svg = d.querySelector("#loader");
+            d.querySelector("#searchBtn").addEventListener("click", () => {
+                svg.style.display = svg.style.display === "none" ? "" : "none";
+            });
+        })(window, document);
+    </script>
+}
+@*<div class="hero-slide owl-carousel site-blocks-cover">
+    <div class="intro-section" style="background-image: url('/images/course_6.jpg');">
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="col-lg-4 mx-auto text-center" data-aos="fade-up">*@
+
+@*<div class="col-6">
+        <partial name="_BankStatistics" model="Model" />
+    </div>
+    <partial name="_SearchByCustomerId" />*@
+@*<h1>Federal College of Education (Technical), Asaba</h1>*@
+@*</div>
+            </div>
+        </div>
+    </div>*@
+@*<div class="intro-section" style="background-image: url('/images/course_6.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
+                    <h1>You Can Learn Anything</h1>
+                </div>
+            </div>
+        </div>
+    </div>*@
+@*</div>*@
+
+
+@*<div class="section-bg style-1" style="background-image: url('/images/course_6.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="section-title-underline style-2">
+                        <span>About Our College</span>
+                    </h2>
+                </div>
+                <div class="col-lg-8">
+                    <p class="lead"> The Federal College of Education Technical, Asaba was established by Decree No 4 1986 published in an extra-ordinary gazette No. 16, vol. 73 of the Federal Republic of Nigeria. The decree was emended by decree No. 6 of 1993. The College commenced operation in September 1987 at the present temporary site which hou8sed the defunct Asaba Technical College, Asaba. The Permanent site of the College is along Ibusa Road, Asaba. The school of Business Education, Technical Education and Vocational Education have already moved to the permanent site of the college.</p>
+                    <p><a href="#">Read more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+     // 05 - Block
+    <div class="site-section">
+        <div class="container">
+        </div>
+    </div>*@
+

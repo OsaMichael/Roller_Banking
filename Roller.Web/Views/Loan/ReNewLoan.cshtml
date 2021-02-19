@@ -1,0 +1,97 @@
+﻿@model Roller.Repository.LoanRepos.LoanModel
+@{
+    ViewData["Title"] = "ReNewLoan";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+@*@page section*@
+<div class="container-fluid">
+    <div class="row">
+        <!-- basic forms -->
+        <!-- forms cntrol -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+
+                <div class="card-content">
+                    <form class="form-horizontal" action="@Url.Action("ReNewLoan","Loan")" method="post">
+                        @Html.AntiForgeryToken()
+                        @*@Html.ValidationSummary(true)*@
+                        <input type="hidden" name="AccountNumber" value="@Model.AccountNumber" />
+                        <input type="hidden" name="LoanId" value="@Model.LoanId" />
+                        <fieldset>
+                            <tr>
+
+                                <td>
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Loan Amount  <span class="text-danger">*</span></label>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                @Html.EditorFor(model => model.Loan_Amount, new { htmlAttributes = new { id = "Loan_Amount", @class = "form-control", @type = "text", required = "required" } })
+                                                @Html.ValidationMessageFor(model => model.Loan_Amount, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Interest Rate <span class="text-danger">*</span></label>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                @Html.EditorFor(model => model.Interest_Rate, new { htmlAttributes = new { id = "Interest_Rate", @class = "form-control", @type = "text", required = "required" } })
+                                                @Html.ValidationMessageFor(model => model.Interest_Rate, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Deadline (1 or 3 months) <span class="text-danger">*</span></label>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                @Html.EditorFor(model => model.Duration, new { htmlAttributes = new { id = "Duration", @class = "form-control", placeholder = "1 or 3 months", @type = "text", required = "required" } })
+                                                @Html.ValidationMessageFor(model => model.Duration, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group row">
+                                        <label asp-for="Frequency"></label>
+                                        <div class="col-md-4">
+                                            <select id="frequency" name="frequency" class="form-control">
+                                                <option value="">Select package</option>
+                                                <option value="Weekly">Weekly</option>
+                                                <option value=" Monthly">Monthly</option>
+                                                <option value="Yearly">Yearly</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            <div class="form-group">
+                                <label class="col-md-8 control-label"></label>
+                                <div class="col-md-4">
+
+                                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-send"></span>  Submit</button>
+
+                                    <a href="@Url.Action("SearchFullCustDetails","Customer")" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Back</a>
+                                </div>
+
+                            </div>
+                            <br />
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*./bootstrap forms*@
+</div>
